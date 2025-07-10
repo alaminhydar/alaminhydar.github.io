@@ -65,10 +65,37 @@
         <h2 class="fs-1 fw-bold">I am <span class="text-warning">Alamin Hydar Aliyu</span></h2>
         <p class="fs-4 text-dark mt-2 mb-5">Nice to meet you!</p>
         <p><span class="typed bg-dark text-warning p-2 " data-typed-items="Full Stack Developer, Cyber Security"></span></p>
-        <div class="mt-4">
-          <button class="btn btn-dark fs-5 me-2">Blog</button>
-          <button class="btn btn-warning text-light fs-5">Projects</button>
+        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+
+          <!-- Blog Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle px-4 py-2 rounded-3 shadow-sm fw-bold" type="button" id="blogDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm rounded-3 animate__animated animate__fadeIn" aria-labelledby="blogDropdown" style="min-width: 260px;">
+              <li class="fw-bold">
+                <a class="dropdown-item d-flex align-items-center gap-2 fw-bold" href="https://medium.com/@yourusername" target="_blank">
+                  <i class="bi bi-journal-text text-warning"></i>
+                  <span>Beyond Code (Systems, Strategy & Security)</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 fw-bold" href="https://yourusername.hashnode.dev" target="_blank">
+                  <i class="bi bi-code-slash text-primary"></i>
+                  <span>Technical – Code & Build</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Projects Button -->
+          <a href="#portfolio" class="btn btn-warning text-light px-4 py-2 rounded-3 shadow-sm fw-bold">
+            Projects
+          </a>
+        
         </div>
+        
+        
 
         <div class="container mt-4">
           <div class="social-links d-flex justify-content-center fs-3">
