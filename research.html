@@ -47,7 +47,27 @@
     }
   </style>
 </head>
-<body>
+<body class="bg-black">
+    <header id="header" class="header bg-black d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename text-warning">Alamin Hydar</h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active text-warning">Home<br></a></li>
+              <li><a href="#about" class=" text-warning">About Me</a></li>
+              <li><a href="#services" class=" text-warning">Services</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+        </div>
+      </header>
 
   <div class="container py-5">
     <div class="text-center mb-4">
@@ -60,40 +80,40 @@
       <input type="text" id="searchInput" class="form-control form-control-lg bg-dark text-light border-warning" placeholder="Search topics or categories...">
     </div>
 
-    <div class="row g-4" id="categoryContainer">
+    <div class="row g-4" id="categoryContainer ">
 
       <!-- Category 1 -->
       <div class="col-md-4 category-item">
-        <div class="category-card p-4 text-center">
-          <h4 class="text-warning">Defense & Security Strategy</h4>
+        <div class="category-card p-4 text-center bg-dark">
+          <h4 class="text-warning fw-bold">Defense & Security Strategy</h4>
           <p class="text-secondary">Analyses on military strategy, intelligence, and defense systems.</p>
           <a href="pages/defense.html" class="btn btn-warning mt-3">View Articles</a>
         </div>
       </div>
 
       <!-- Category 2 -->
-      <div class="col-md-4 category-item">
+      <!-- <div class="col-md-4 category-item">
         <div class="category-card p-4 text-center">
           <h4 class="text-warning">Psychology & Behavior</h4>
           <p class="text-secondary">Understanding cognitive patterns, perception, and decision-making.</p>
           <a href="psychology.html" class="btn btn-warning mt-3">View Articles</a>
         </div>
-      </div>
+      </div> -->
 
       <!-- Category 3 -->
-      <div class="col-md-4 category-item">
+      <!-- <div class="col-md-4 category-item">
         <div class="category-card p-4 text-center">
           <h4 class="text-warning">Technology & Systems</h4>
           <p class="text-secondary">AI, cyber defense, and future technological warfare systems.</p>
           <a href="technology.html" class="btn btn-warning mt-3">View Articles</a>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
 
 
-  <footer id="footer" class="footer accent-background">
+  <footer id="footer" class="footer accent-background bg-black">
 
     <div class="container">
       <div class="social-links d-flex justify-content-center">
