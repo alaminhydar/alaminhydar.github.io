@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science & Machine Learning with Amin</title>
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .lesson-card {
+      background-color: black;
+      border-radius: 12px;
+      border: 2px solid #ffc107;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+    }
+    .lesson-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+    }
+    .lesson-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #121212;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .btn-download:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-light">
+    <header id="header" class="header bg-black d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+          <a href="/index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename text-warning">Alamin Hydar</h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active text-warning">Home</a></li>
+              <li><a href="#about" class=" text-warning">About Me</a></li>
+              <li><a href="#services" class=" text-warning">Services</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </header>
+  <div class="container">
+    <h1 class="text-dark fw-bold text-center mb-4">Data Science & Machine Learning with Amin</h1>
+    <p class="text-secondary text-center mb-5">
+      Browse through my lessons and projects. Each lesson includes a PDF tutorial.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Lesson 1 -->
+      <div class="col-md-6 ">
+        <div class="lesson-card ">
+          <img src="../assets/img/Technicals/python.jpg" alt="Python Programming">
+          <h4 class="text-warning fw-bold mb-2">Part 1: Python Programming</h4>
+          <p class="text-secondary mb-3">
+            Python basics, tutorials, and exercises for a solid foundation in data science and machine learning.
+          </p>
+          <a href="../media/Technicals/Data-Science-Machine-Learning/part-2-Data-science-and-machine-learning-python.pdf" download class="btn-download">Download PDF</a>
+        </div>
+      </div>
+
+      <!-- Lesson 2 -->
+      <div class="col-md-6">
+        <div class="lesson-card">
+          <img src="../assets/img/Technicals/numpy.jpg" alt="NumPy Basics">
+          <h4 class="text-warning fw-bold mb-2">Part 2: NumPy & Data Structures</h4>
+          <p class="text-secondary mb-3">
+            Learn NumPy arrays, operations, and data structures essential for machine learning.
+          </p>
+          <a href="../media/Technicals/Data-Science-Machine-Learning/part-2-Data-science-and-machine-learning-pytho.pdf" download class="btn-download">Download PDF</a>
+        </div>
+      </div>
+
+      <!-- You can add more lessons similarly -->
+
+    </div>
+  </div>
+
+  <footer id="footer" class="footer accent-background bg-black">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/alaminhydar" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/alaminhydar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
