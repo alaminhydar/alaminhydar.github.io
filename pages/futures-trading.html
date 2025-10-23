@@ -80,13 +80,19 @@
 
       <!-- Lesson 1 -->
       <div class="col-md-6 ">
-        <div class="lesson-card bg-success border-none">
+        <div class="lesson-card position-relative bg-success border-none">
           <img src="../media/Technicals/Futures-trading/introduction.jpg" alt="Python Programming">
           <h4 class="text-dark fw-bold mb-2">Part 1: Introduction to futures trading</h4>
           <p class="text-light mb-3">
             Introduction to futures trading
           </p>
-          <a href="../media/Technicals/Futures-trading/part-1:introduction-futures-trading-amin.pdf" download class="btn-download">Download PDF</a>
+          <a href="../media/Technicals/Futures-trading/part-1:introduction-futures-trading-with-amin.pdf"
+                download 
+                class="btn-download" 
+                onclick="notifyDownload('Part 1: Introduction to futures trading')">
+                Download PDF
+          </a>
+
         </div>
       </div>
 
@@ -116,6 +122,31 @@
     </div>
   </footer>
 
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    function notifyDownload(lessonName) {
+    // Simple alert
+    // alert(`${lessonName} is downloading...`);
+
+    // Or a nicer toast-like notification
+    let toast = document.createElement('div');
+    toast.innerText = `${lessonName} is downloading...`;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.backgroundColor = '#ffc107';
+    toast.style.color = '#121212';
+    toast.style.padding = '10px 20px';
+    toast.style.borderRadius = '8px';
+    toast.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+    toast.style.fontWeight = '600';
+    toast.style.zIndex = '9999';
+    document.body.appendChild(toast);
+
+    // Remove the toast after 3 seconds
+    setTimeout(() => {
+      toast.remove();
+    }, 3000);
+  }
+  </script>
 </body>
 </html>
