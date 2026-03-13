@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Engineering,Secure Systems & Technical Deep Dives</title>
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .lesson-card {
+      background-color: black;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+      height: 100%;
+    }
+
+    .lesson-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+    }
+
+    .lesson-card img {
+      width: 100%;
+      height: 220px; /* ensures uniform height */
+      object-fit: cover; /* maintains aspect ratio and fills the space neatly */
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #121212;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-download:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px 0;
+    }
+
+    footer .social-links a {
+      color: #ffc107;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    footer .social-links a:hover {
+      color: #f8f9fa;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <header id="header" class="header bg-black d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between text-success">
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename text-primary">Alamin Hydar</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active text-primary">Home</a></li>
+          <li><a href="#about" class="text-primary">About Me</a></li>
+          <li><a href="#services" class="text-primary">Services</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="text-primary fw-bold text-center mb-4">Backend Engineering,Secure Systems & Technical Deep Dives
+   </h1>
+    <p class="text-secondary text-center mb-5">
+     A collection of projects, implementation guides, and deep technical documentation focused on secure systems, backend development, data science, and real-world software architecture.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Lesson 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="lesson-card bg-primary">
+          <img src="../media/Technicals/Technical-dives/img/userauth2.png" alt="Futures Trading Introduction">
+          <h4 class="text-dark fw-bold mb-2">Secure Authentication System</h4>
+          <p class="text-light mb-3">
+            A production-style secure authentication system built with Django, DRF, JWT, Celery, Redis, and React, featuring OTP verification, password recovery, throttling, audit logging, and detailed technical documentation.
+          </p>
+          <a href="../media/Technicals/Technical-dives/user-auth.pdf"
+             download 
+             class="btn-download"
+             onclick="notifyDownload('Secure Authentication System')">
+             Download PDF
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Add More Lessons Below -->
+      <!-- Example for next lesson -->
+      <!--
+      <div class="col-md-6 col-lg-4">
+        <div class="lesson-card bg-success">
+          <img src="../media/Technicals/Futures-trading/img/part3.jpg" alt="Advanced Strategy">
+          <h4 class="text-dark fw-bold mb-2">Part 3: Advanced Futures Strategies</h4>
+          <p class="text-light mb-3">
+            Explore trading psychology, technical analysis, and risk-reward strategy.
+          </p>
+          <a href="../media/Technicals/Futures-trading/part-3:Advanced-Futures-Strategies.pdf"
+             download 
+             class="btn-download"
+             onclick="notifyDownload('Part 3: Advanced Futures Strategies')">
+             Download PDF
+          </a>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-black text-center">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center mb-3">
+        <a href="https://x.com/alaminhydar" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/alaminhydar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p class="text-secondary mb-0">&copy; 2025 Alamin Hydar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
